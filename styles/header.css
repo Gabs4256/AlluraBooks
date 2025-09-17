@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .container {
   display: flex;
@@ -20,4 +21,28 @@
 
 .container__imagem {
   padding: 1em;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+.container__botao:checked ~ .lista-menu {
+  display: block;
+}
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--branco);
+}
+.lista-menu__titulo {
+  color: var(--amarelo-destaque);
+}
+.lista-menu__item {
+  color: var(--azul-degrade);
+}
+.lista-menu__link {
+  text-decoration-line: none;
 }
