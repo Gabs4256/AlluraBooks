@@ -1,0 +1,9 @@
+hr {
+  margin: 0;
+}
+.rodapé {
+  display: flex;
+  justify-content: center;
+  background-color: var(--branco);
+  padding: 1em;
+}
